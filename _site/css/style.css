@@ -205,7 +205,7 @@ header .navbar-default .navbar-nav li a {
 #intro .block h2 {
   font-family: 'Cinzel';
   font-style: bold;
-  color: #FFFFFF;
+  color: #414042;
   padding-top: 35px;
   line-height: 27px;
   margin: 0;
@@ -213,14 +213,14 @@ header .navbar-default .navbar-nav li a {
 #intro .block h3 {
   font-family: 'Cinzel';
   font-style: italic;
-  color: #FFFFFF;
+  color: #414042;
   padding-top: 40px;
   line-height: 24px;
   margin: 0;
 }
 #intro .block h4 {
   font-family: 'Cinzel';
-  color: #FFFFFF;
+  color: #414042;
   padding-top: 10px;
   line-height: 24px;
   margin: 0;
@@ -228,7 +228,7 @@ header .navbar-default .navbar-nav li a {
 #intro .block p {
   font-family: 'Cormorant';
   font-size: 20px;
-  color: #FFFFFF;
+  color: #414042;
   padding-top: 20px;
   text-align: justify;
 }
@@ -266,7 +266,7 @@ header .navbar-default .navbar-nav li a {
   color: #414042;
 }
 #sidebar .nav-side-menu li a:hover {
-  color: #E0C187;
+  color: #000000;
 }
 
 @media (max-width: 850px) {
