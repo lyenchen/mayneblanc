@@ -22,8 +22,8 @@ px      68    160    252    344    436    528    620    712    */
   }
   header .navbar-default .navbar-nav li a {
     padding: 5px 5px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid #414042;
+    border-bottom: 1px solid #414042;
     font-size: 12px;
   }
   #home .container .media {
@@ -77,12 +77,12 @@ px      68    160    252    344    436    528    620    712    */
     width: 68%;
   }
   footer .navbar-default .navbar-nav li a {
-    color: #FFFFFF;
+    color: #414042;
     padding: 10px 10px;
     font-size: 15px;
   }
   footer .navbar-default .navbar-nav li a:hover {
-    color: #FFFFFF;
+    color: #414042;
   }
   /*---------------------------------------------
 					Index Close 
