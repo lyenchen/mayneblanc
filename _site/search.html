@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search</title>
+    <meta name="description" content="">
+    <base href="http://localhost:4000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome.all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/languages.css">
+
+    
+    <!-- Js -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/min/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/google-map-init.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+
+  </head>
+  <body>
+
+
+
+    <!-- Header Start -->
+  <header>
+    <div class="container-fluid">
+      <div class="row" align="right">
+        <div class="language-selection">
+	<span><a class="lang-sm lang-lbl" lang="en" href="#"></a></span>
+	<span><a class="lang-sm lang-lbl" lang="fr" href="fr/index_fr.html"></a></span>
+	<span><a class="lang-sm lang-lbl" lang="zh" href="index_zh.html"></a></span>
+</div>
+      </div>
+      <div class="row">
+        <div>
+        	<header>
+  <div class="container-fluid">
+    <div class="row">
+      
+        <div class="col-md-2 col-sm-2">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo">
+          </a>
+        </div>
+       
+        <div class="col-md-8 col-sm-8">
+        <!-- header Nav Start -->
+        <nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="vineyard.html">Vineyard</a></li>
+            <!--<li class="dropdown"><a href="vineyard.html">Vineyard <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="vineyard.html#appellation">The Appellation</a></li>
+                <li><a href="vineyard.html#vineyard">The Vineyard</a></li>
+                <li><a href="vineyard.html#viticulture">The Viticulture</a></li>
+                <li><a href="vineyard.html#grapes">The Grapes</a></li>
+              </ul>
+            -->
+            <li><a href="vinification.html">Vinification</a></li>
+            <li><a href="our-wine.html">Wines</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Visit</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+      </nav>
+    </div>
+    <div class="col-md-2 col-sm-2"></div>
+  </div>
+</div>
+</header>
+
+        </div>
+      </div>
+    </div>
+  </header><!-- header close -->
+
+
+
+<form action="/search.html" method="get">
+	<label for="search-box">Search</label>
+	<input type="text" id="search-box" name="query">
+	<input type="submit" value="search">
+</form>
+
+<ul id="search-results"></ul>
+
+<script>
+	window.store = {
+		
+		"Château PREUILLAC - 2008": {
+			"title": "Château PREUILLAC - 2008",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2008-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2009": {
+			"title": "Château PREUILLAC - 2009",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2009-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2010": {
+			"title": "Château PREUILLAC - 2010",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2010-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2011": {
+			"title": "Château PREUILLAC - 2011",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2011-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2012": {
+			"title": "Château PREUILLAC - 2012",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2012-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2013": {
+			"title": "Château PREUILLAC - 2013",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2013-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2014": {
+			"title": "Château PREUILLAC - 2014",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2014-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2015": {
+			"title": "Château PREUILLAC - 2015",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2015-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2016": {
+			"title": "Château PREUILLAC - 2016",
+			"category": "Château PREUILLAC",
+			"location": "/assets/Château Preuillac 2016-EN.pdf"
+		}
+		,
+		
+		"Émotion - 2015": {
+			"title": "Émotion - 2015",
+			"category": "Émotion",
+			"location": "/assets/Emotion Prueillac 2015-EN.pdf"
+		}
+		,
+		
+		"Émotion - 2016": {
+			"title": "Émotion - 2016",
+			"category": "Émotion",
+			"location": "/assets/Emotion Prueillac 2016-EN.pdf"
+		}
+		,
+		
+		"Esprit - 2015": {
+			"title": "Esprit - 2015",
+			"category": "Esprit",
+			"location": "/assets/Esprit de Prueillac 2015-EN.pdf"
+		}
+		,
+		
+		"Esprit - 2016": {
+			"title": "Esprit - 2016",
+			"category": "Esprit",
+			"location": "/assets/Esprit de Prueillac 2016-EN.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2008": {
+			"title": "Château PREUILLAC - 2008",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2008-FR.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2009": {
+			"title": "Château PREUILLAC - 2009",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2009-FR.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2010": {
+			"title": "Château PREUILLAC - 2010",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2010-FR.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2011": {
+			"title": "Château PREUILLAC - 2011",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2011-FR.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2012": {
+			"title": "Château PREUILLAC - 2012",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2012-FR.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2013": {
+			"title": "Château PREUILLAC - 2013",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2013-FR.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2014": {
+			"title": "Château PREUILLAC - 2014",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2014-FR.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2015": {
+			"title": "Château PREUILLAC - 2015",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2015-FR.pdf"
+		}
+		,
+		
+		"Château PREUILLAC - 2016": {
+			"title": "Château PREUILLAC - 2016",
+			"category": "Château PREUILLAC FR",
+			"location": "/assets/fr/Château Preuillac 2016-FR.pdf"
+		}
+		,
+		
+		"Émotion - 2015": {
+			"title": "Émotion - 2015",
+			"category": "Émotion FR",
+			"location": "/assets/fr/Emotion Preuillac 2015-FR.pdf"
+		}
+		,
+		
+		"Émotion - 2016": {
+			"title": "Émotion - 2016",
+			"category": "Émotion FR",
+			"location": "/assets/fr/Emotion Preuillac 2016-FR.pdf"
+		}
+		,
+		
+		"Esprit - 2015": {
+			"title": "Esprit - 2015",
+			"category": "Esprit FR",
+			"location": "/assets/fr/Esprit de Preuillac 2015-FR.pdf"
+		}
+		,
+		
+		"Esprit - 2016": {
+			"title": "Esprit - 2016",
+			"category": "Esprit FR",
+			"location": "/assets/fr/Esprit de Preuillac 2016-FR.pdf"
+		}
+		
+		
+	};
+		
+</script>
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+    <footer>
+      <div class="container-fluid*">
+        <div class="row">
+          <div class="col-md-12">
+            <p>© 2018 by SAS VIN PLUS</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+                     
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+            
+    
+    </body>
+</html>
