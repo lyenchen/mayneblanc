@@ -19,7 +19,7 @@
 
 /* General Demo Style */
 body {
-	background: #e4ebe9 url(../img/fancy_deboss.png) repeat top left;
+	background: #e4ebe9 url(../images/fancy_deboss.png) repeat top left;
 	color: #444;
 	font-family: "PT Sans Narrow", Arial, sans-serif;
 	font-size: 13px;
@@ -159,6 +159,6 @@ p.info {
 	clear: both;
 	text-align: center;
 	width: 100%;
-	max-width: 440px;
+	max-wdith: 440px;
 	margin: 0 auto;
 }
