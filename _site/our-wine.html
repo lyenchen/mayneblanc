@@ -1,164 +1,172 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Slicebox - 3D Image Slider</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
-        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
-    <meta name="author" content="Pedro Botelho for Codrops" />
-    <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
-    <link rel="stylesheet" type="text/css" href="css/custom.css" />
-    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Our Wine</title>
+    <meta name="description" content="">
+    <base href="http://localhost:4000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href='//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css'>
+    <link rel="stylesheet" href='//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css'>
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/languages.css">
+    <link rel="stylesheet" href="css/wine-carousel.css">
+    
+    <!-- Js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+
   </head>
   <body>
-    <div class="container">
 
-      <div class="codrops-top clearfix">
-        <a href="http://tympanus.net/Development/AutomaticImageMontage/"><span>&laquo; Previous Demo: </span>Automatic Image Montage</a>
-        <span class="right">
-          <a target="_blank" href="http://www.flickr.com/photos/strupler/">Images by <strong>ND Strupler</strong></a>
-          <a href="http://tympanus.net/codrops/?p=5657"><strong>Back to the Codrops Article</strong></a>
-        </span>
+
+
+    <!-- Header Start -->
+  <header>
+    <div class="container-fluid">
+      <div class="row" align="right">
+        <div class="language-selection">
+	<span><a class="lang-sm lang-lbl" lang="en" href="#"></a></span>
+	<span><a class="lang-sm lang-lbl" lang="fr" href="fr/index_fr.html"></a></span>
+	<span><a class="lang-sm lang-lbl" lang="zh" href="index_zh.html"></a></span>
+</div>
       </div>
-
-      <h1>Slicebox <span>A fresh 3D image slider with graceful fallback</span></h1>
-  
-
-      <div class="wrapper">
-
-        <ul id="sb-slider" class="sb-slider">
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2969141180" target="_blank"><img src="images/1.jpg" alt="image1"/></a>
-            <div class="sb-description">
-              <h3>Creative Lifesaver</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank"><img src="images/2.jpg" alt="image2"/></a>
-            <div class="sb-description">
-              <h3>Honest Entertainer</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank"><img src="images/3.jpg" alt="image1"/></a>
-            <div class="sb-description">
-              <h3>Brave Astronaut</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="images/4.jpg" alt="image1"/></a>
-            <div class="sb-description">
-              <h3>Affectionate Decision Maker</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank"><img src="images/5.jpg" alt="image1"/></a>
-            <div class="sb-description">
-              <h3>Faithful Investor</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="images/6.jpg" alt="image1"/></a>
-            <div class="sb-description">
-              <h3>Groundbreaking Artist</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="images/7.jpg" alt="image1"/></a>
-            <div class="sb-description">
-              <h3>Selfless Philantropist</h3>
-            </div>
-          </li>
-        </ul>
-
-        <div id="shadow" class="shadow"></div>
-
-        <div id="nav-arrows" class="nav-arrows">
-          <a href="#">Next</a>
-          <a href="#">Previous</a>
+      <div class="row">
+        <div>
+        	<header>
+  <div class="container-fluid">
+    <div class="row">
+      
+        <div class="col-md-2 col-sm-2">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo">
+          </a>
         </div>
+       
+        <div class="col-md-8 col-sm-8">
+        <!-- header Nav Start -->
+        <nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
-        <div id="nav-options" class="nav-options">
-          <span id="navPlay">Play</span>
-          <span id="navPause">Pause</span>
-        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="vineyard.html">Vineyard</a></li>
+            <!--<li class="dropdown"><a href="vineyard.html">Vineyard <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="vineyard.html#appellation">The Appellation</a></li>
+                <li><a href="vineyard.html#vineyard">The Vineyard</a></li>
+                <li><a href="vineyard.html#viticulture">The Viticulture</a></li>
+                <li><a href="vineyard.html#grapes">The Grapes</a></li>
+              </ul>
+            -->
+            <li><a href="vinification.html">Vinification</a></li>
+            <li><a href="our-wine.html">Wines</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Visit</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
 
-      </div><!-- /wrapper -->
-
-      <p class="info"><strong>Example 2:</strong> Slideshow with play &amp; pause and horizontal slices</p>
-
+      </nav>
     </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        
-        var Page = (function() {
+    <div class="col-md-2 col-sm-2"></div>
+  </div>
+</div>
+</header>
 
-          var $navArrows = $( '#nav-arrows' ).hide(),
-            $navOptions = $( '#nav-options' ).hide(),
-            $shadow = $( '#shadow' ).hide(),
-            slicebox = $( '#sb-slider' ).slicebox( {
-              onReady : function() {
+        </div>
+      </div>
+    </div>
+  </header><!-- header close -->
 
-                $navArrows.show();
-                $navOptions.show();
-                $shadow.show();
 
-              },
-              orientation : 'h',
-              cuboidsCount : 3
-            } ),
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-sm-2"></div>
+      <div class="col-md-8 col-sm-8">
+        <div class="block">
+          <div class="constant-simple-slider" id="" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "infinite": true, "arrows":false, "autoplay":true, "autoplaySpeed":0, "responsive":[{"breakpoint": 768, "settings":{"slidesToShow":2 }},{"breakpoint": 480, "settings":{"slidesToShow":2 }}]}'>
+            <div>
+              <img src="img/1.png">
+          </div>
+          <div>
+            <img src="img/2.png">
+          </div>
+          <div>
+            <img src="img/3.png">
+          </div>
+          <div>
+            <img src="img/4.png">
+          </div>
+          <div>
+            <img src="img/5.png">
+          </div>
+          <div>
+            <img src="img/6.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js'></script>
+<script id="rendered-js">
+  jQuery(function ($) {
+    var $s = $('.constant-simple-slider').slick({
+      cssEase: 'linear',
+      speed: 8000,
+      autoPlay: false,
+      pauseOnHover: false });
+
+    $('.gotoright').click(function ($) {
+      $s.slick("setOption", "speed", 1, false);
+    });
+    $('.gotoleft').click(function ($) {
+    });
+  });
+          //# sourceURL=pen.js
+</script>
+
+
+
+
+    <footer>
+      <div class="container-fluid*">
+        <div class="row">
+          <div class="col-md-12">
+            <p>© 2019 by SAS VIN PLUS</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+                     
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
             
-            init = function() {
-
-              initEvents();
-              
-            },
-            initEvents = function() {
-
-              // add navigation events
-              $navArrows.children( ':first' ).on( 'click', function() {
-
-                slicebox.next();
-                return false;
-
-              } );
-
-              $navArrows.children( ':last' ).on( 'click', function() {
-                
-                slicebox.previous();
-                return false;
-
-              } );
-
-              $( '#navPlay' ).on( 'click', function() {
-                
-                slicebox.play();
-                return false;
-
-              } );
-
-              $( '#navPause' ).on( 'click', function() {
-                
-                slicebox.pause();
-                return false;
-
-              } );
-
-            };
-
-            return { init : init };
-
-        })();
-
-        Page.init();
-
-      });
-    </script>
-  </body>
-</html> 
+    
+    </body>
+</html>
