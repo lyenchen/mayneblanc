@@ -14,8 +14,6 @@ toc:
     subfolderitems:
       - page: The Vinification
         url: vinification.html#vinification
-      - page: The Wooden Vats
-        url: vinification.html#woodenvats
       - page: Oak Barrels
         url: vinification.html#oakbarrels
   - title: Le Vignoble
@@ -32,7 +30,5 @@ toc:
     subfolderitems:
       - page: La Vinification
         url: fr/vinification.html#vinification
-      - page: Les cuves en bois
-        url: fr/vinification.html#woodenvats
       - page: Les fûts de chêne
         url: fr/vinification.html#oakbarrels
