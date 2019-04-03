@@ -6,36 +6,13 @@ title: Our Wine
 <div class="background"></div>
   <section class="container">
     <div id="carousel"> 
+      {% for wine in site.data.wines %}
       <figure>
-        <a href="#">
-          <img src="img/1.png" />
+        <a href="{{ wine.href }}">
+          <img src="{{ wine.image }}" />
         </a>
       </figure>
-      <figure>
-        <a href="#">
-          <img src="img/2.png" />
-        </a>
-      </figure>
-      <figure>
-        <a href="#">
-          <img src="img/3.png" />
-        </a>
-      </figure>
-      <figure>
-        <a href="#">
-          <img src="img/4.png" />
-        </a>
-      </figure> 
-            <figure>
-        <a href="#">
-          <img src="img/5.png" />
-        </a>
-      </figure>
-      <figure>
-        <a href="#">
-          <img src="img/6.png" />
-        </a>
-      </figure>
+      {% endfor %}
     </div>
   </section>
 

@@ -12,11 +12,11 @@ title: Search
 
 <script>
 	window.store = {
-		{% for wine in site.data.wines %}
-		"{{ wine.title }}": {
-			"title": "{{ wine.title | xml_escape }}",
-			"category": "{{ wine.category | xml_escape }}",
-			"location": "{{ wine.location | xml_escape }}"
+		{% for vintage in site.data.vintages %}
+		"{{ vintage.title }}": {
+			"title": "{{ vintage.title | xml_escape }}",
+			"category": "{{ vintage.category | xml_escape }}",
+			"location": "{{ vintage.location | xml_escape }}"
 		}
 		{% unless forloop.last %},{% endunless %}
 		{% endfor %}
