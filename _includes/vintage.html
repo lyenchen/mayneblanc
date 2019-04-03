@@ -2,13 +2,13 @@
 <!--{% assign wines = site.data.wines | where:"category","{{ include.category }}" %} -->
 {% for wine in site.data.wines %}{% if wine.category == include.category %}
   <div id="vintage">
-    <img src="{{ wine.image }}" />
+    <img src="{{ site.url }}{{ wine.image }}" />
   </div>
   <nav>
     <ul class="vintage">
       {% assign vintages = site.data.vintages | where:"category", include.category %}
       {% for vintage in vintages %}
-        <li><a href="{{ vintage.location }}">{{ vintage.year }}</a></li>
+        <li><a href="{{ site.url }}{{ vintage.location }}">{{ vintage.year }}</a></li>
       {% endfor %}
     </ul>
   </nav>
