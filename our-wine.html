@@ -9,7 +9,7 @@ title: Our Wine
       {% for wine in site.data.wines %}
       <figure>
         <a href="{{ wine.href }}">
-          <img src="{{ wine.image }}" />
+          <img src="{{ site.url }}{{ wine.image }}" />
         </a>
       </figure>
       {% endfor %}
