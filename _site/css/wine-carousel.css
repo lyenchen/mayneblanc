@@ -130,9 +130,6 @@ h3 {
   bottom: -18px;
   z-index: -1;
 }
-.vintage a:visited {
-  color: #a7a7a7;
-}
 .vintage a:hover {
   color: hsl(30, 70%, 50%);
 }
