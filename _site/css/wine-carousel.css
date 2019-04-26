@@ -157,7 +157,7 @@
   /*default owl-theme theme reset .disabled:hover links */
 }
 .owl-theme .owl-nav [class*='owl-'] {
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 .owl-theme .owl-nav [class*='owl-'].disabled:hover {
   background-color: #D6D6D6;
